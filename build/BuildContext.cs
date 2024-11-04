@@ -17,9 +17,9 @@ public enum ProjectType
 
 public class BuildContext : FrostingContext
 {
-    public static string VersionBase = "3.8.2";
+    public static string VersionBase = "9.0.1";
     public static readonly Regex VersionRegex = new(@"^v\d+.\d+.\d+", RegexOptions.Compiled | RegexOptions.IgnoreCase);
-    public static readonly string DefaultRepositoryUrl = "https://github.com/MonoGame/MonoGame";
+    public static readonly string DefaultRepositoryUrl = "https://github.com/inDirection-Games-AB/MonoGame";
 
     public BuildContext(ICakeContext context) : base(context)
     {
