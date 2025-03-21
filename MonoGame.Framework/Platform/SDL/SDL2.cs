@@ -485,6 +485,10 @@ public static class Sdl
         public static d_sdl_showwindow Show = FuncLoader.LoadFunction<d_sdl_showwindow>(NativeLibrary, "SDL_ShowWindow");
 
         [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+        public delegate void d_sdl_hidewindow(IntPtr window);
+        public static d_sdl_hidewindow Hide = FuncLoader.LoadFunction<d_sdl_hidewindow>(NativeLibrary, "SDL_HideWindow");
+
+        [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
         public delegate bool d_sdl_getwindowwminfo(IntPtr window, ref SDL_SysWMinfo sysWMinfo);
         public static d_sdl_getwindowwminfo GetWindowWMInfo = FuncLoader.LoadFunction<d_sdl_getwindowwminfo>(NativeLibrary, "SDL_GetWindowWMInfo");
 
