@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 using System.Diagnostics;
 using MonoGame.Framework.Utilities;
 
-internal static class Sdl
+public static class Sdl
 {
     public static IntPtr NativeLibrary = GetNativeLibrary();
 
