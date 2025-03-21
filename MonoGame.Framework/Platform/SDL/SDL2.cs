@@ -762,6 +762,10 @@ public static class Sdl
         [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
         public delegate void d_sdl_warpmouseinwindow(IntPtr window, int x, int y);
         public static d_sdl_warpmouseinwindow WarpInWindow = FuncLoader.LoadFunction<d_sdl_warpmouseinwindow>(NativeLibrary, "SDL_WarpMouseInWindow");
+
+        [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+        public delegate void d_sdl_setwindowmousegrab(IntPtr window, bool grabbed);
+        public static d_sdl_setwindowmousegrab SetWindowMouseGrab = FuncLoader.LoadFunction<d_sdl_setwindowmousegrab>(NativeLibrary, "SDL_SetWindowMouseGrab");
     }
 
     public static class Keyboard
