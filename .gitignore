@@ -95,3 +95,5 @@ vsxmake2022
 
 # docfx
 _*
+# protect against accidentally commit sensitive stuff
+Switch
